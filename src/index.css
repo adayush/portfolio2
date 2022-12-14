@@ -3,7 +3,19 @@
 @tailwind utilities;
 
 @layer components {
+    .grid-container {
+        @apply flex flex-col min-[550px]:grid gap-5 grid-cols-2 lg:grid-cols-4 md:grid-cols-3;
+    }
     .grid-card {
-        @apply bg-slate-800 p-8 rounded-3xl transition-all hover:bg-slate-700;
+        @apply animate-grow-in bg-slate-800 min-h-[200px] px-9 py-8 rounded-3xl flex flex-col gap-2 justify-end transition-all hover:bg-slate-700;
+    }
+    .arrow {
+        @apply w-8 min-w-[30px] ml-2 h-auto;
+    }
+    .arrow path:first-child {
+        @apply fill-slate-400 group-hover:fill-slate-200;
+    }
+    .arrow path:last-child {
+        @apply stroke-slate-400 group-hover:stroke-slate-200;
     }
 }
