@@ -7,7 +7,8 @@ import twitter from '../assets/twitter.png'
 import tech1 from '../assets/tech1.png'
 import tech2 from '../assets/tech2.png'
 import kanban from '../assets/kanban.png'
-import portfolio from '../assets/portfolio.png'
+// import portfolio from '../assets/portfolio.png'
+import imagegallery from '../assets/imagegallery.png'
 import freelance from '../assets/freelance.png'
 
 function GridSection() {
@@ -56,7 +57,7 @@ function GridSection() {
                         </div>
                     </div>
                 </a>
-                <div className="grid-card">
+                {/* <div className="grid-card">
                     <div>
                         <img src={portfolio} className='rounded-2xl py-2 m-auto' />
                     </div>
@@ -64,7 +65,16 @@ function GridSection() {
                         <h3 className='text-xl font-medium'>Personal/Portfolio Site</h3>
                         <p className='text-gray-300'>My new personal site, made using React and Tailwind. (You're here)</p>
                     </div>
-                </div>
+                </div> */}
+                <a href='https://github.com/adayush/image-gallery' target='_blank' className="grid-card">
+                    <div>
+                        <img src={imagegallery} className="m-auto object-cover object-top rounded" />
+                    </div>
+                    <div>
+                        <h3 className='text-xl font-medium'>Unsplash Clone</h3>
+                        <p className='text-gray-300'>An image gallery using Unsplash's API to display, search and download images.</p>
+                    </div>
+                </a>
                 <a href='https://github.com/adayush/SIH-child' target='_blank' className="grid-card">
                     <div>
                         <img src={sumedha} className="m-auto object-cover object-top" />
